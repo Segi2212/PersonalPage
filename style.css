@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto+Mono&family=Russo+One&display=swap');
+
+/*
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Russo One', sans-serif;*/
+
+/*variable*/
+:root {
+    --Josefine: font-family: 'Josefin Sans', sans-serif;
+    --Roboto: font-family: 'Roboto Mono', monospace;
+    --Russo: font-family: 'Russo One', sans-serif;
+    --Negro: #0B0C0F;
+    --Negro1: #090A0D;
+    --Negro2: #1B1D21;
+    --Negro3: #222326;
+    --Negro4: #313337;
+    --Azul: #2BB3FF;
+    --Verde: #6AC47F;
+    --Morado: #9052F2;
+    --Rosa: #EF62A9;
+    --Naranja: #EFA742;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*body*/
+body {
+    background-color: var(--Negro4);
+}
+
+/*nav*/
+nav {
+    position: static;
+    width: 12vw;
+    height: 100vh;
+    background-color: var(--Negro);
+}
+
+nav .cont_img{
+    width: 100%;
+} 
+
+nav .cont_img img {
+    width: 100%;
+}
+/*nav*/
