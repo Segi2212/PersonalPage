@@ -7,9 +7,9 @@ font-family: 'Russo One', sans-serif;*/
 
 /*variable*/
 :root {
-    --Josefine: font-family: 'Josefin Sans', sans-serif;
-    --Roboto: font-family: 'Roboto Mono', monospace;
-    --Russo: font-family: 'Russo One', sans-serif;
+    --Josefine: 'Josefin Sans', sans-serif;
+    --Roboto: 'Roboto Mono', monospace;
+    --Russo: 'Russo One', sans-serif;
     --Negro: #0B0C0F;
     --Negro1: #090A0D;
     --Negro2: #1B1D21;
@@ -34,17 +34,86 @@ body {
 
 /*nav*/
 nav {
-    position: static;
+    position: fixed;
     width: 12vw;
     height: 100vh;
     background-color: var(--Negro);
 }
 
-nav .cont_img{
+nav .cont_img {
     width: 100%;
-} 
+}
 
 nav .cont_img img {
     width: 100%;
 }
+
+nav ul {
+    font-family: var(--Josefine);
+    color: white;
+    display: block;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+nav ul li {
+    margin-top: 50px;
+}
+
+nav .checkbtn {
+    font-size: 30px;
+    color: white;
+    float: left;
+    line-height: 80px;
+    margin: 0px 0 0 20px;
+    cursor: pointer;
+    display: none;
+    position: static;
+    z-index: 100;
+}
+
+nav #check {
+    display: none;
+}
+
 /*nav*/
+
+@media (max-width: 800px) {
+
+    nav {
+        background-color: var(--Negro4);
+    }
+
+    nav .checkbtn {
+        display: block;
+    }
+
+    nav img{
+        display: none;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: var(--Negro);
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    nav #check:checked~ul {
+        left: 0;
+    }
+}
