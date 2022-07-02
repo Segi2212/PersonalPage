@@ -116,4 +116,7 @@ nav #check {
     nav #check:checked~ul {
         left: 0;
     }
+    nav #check:checked~.nav_logo{
+        display: block;
+    }
 }
